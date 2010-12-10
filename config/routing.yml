@@ -1,0 +1,7 @@
+sfPlupload:
+  url:  /plupload/:form/:validator.:sf_format
+  param:
+    module: sfPlupload
+    action: index
+  requirements:
+    sf_format: json

@@ -1,0 +1,17 @@
+sfPluploadPlugin By Kevin Dew <kev@dewsolutions.co.uk>
+======================================================
+
+This is a symfony 1.x plugin for dealing with uploads created by plupload.
+
+This contains:
+  * An action for receiving requests by plupload
+  * A class to build together the uploaded files
+
+This doesn't contain:
+  * plupload (get it from plupload.com)
+  * widgets / validators, the one's I've wrote are descendants of other library
+    code so haven't put them here although I could send them if anyone is ever
+    interested.
+
+It's designed so that the files can be sent to a url which specifies a form
+and a validator which can be used in processing.
