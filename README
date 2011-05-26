@@ -10,8 +10,8 @@ This contains:
 This doesn't contain:
   * plupload (get it from plupload.com)
   * widgets / validators, the one's I've wrote are descendants of other library
-    code so haven't put them here although I could send them if anyone is ever
-    interested.
+    code so haven't put them here although I have some examples in this gist:
+    https://gist.github.com/788986
 
 It's designed so that the files can be sent to a url which specifies a form
 and a validator which can be used in processing.
