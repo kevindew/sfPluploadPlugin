@@ -78,7 +78,7 @@ class BasesfPluploadActions extends sfActions
 
     try
     {
-      $filename = $validator->clean(array(
+      $file = $validator->clean(array(
         'name' => $plupload->getOriginalFilename(),
         'file' => $plupload->getFilePath(),
         'type' => $plupload->getMimeType()
@@ -95,7 +95,7 @@ class BasesfPluploadActions extends sfActions
 
     $this->returnData = array(
       'status' => 'complete',
-      'filename' => $filename
+      'file' => $file
     );
   }
 }
