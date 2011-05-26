@@ -323,10 +323,18 @@ class sfPluploadUploadedFile
     }
 
 		while (($file = readdir($dir)) !== false) {
+
+      if (substr($file, 0, 1) == '.')
+      {
+        continue;
+      }
+
 			$filePath = $this->getTargetDir() . DIRECTORY_SEPARATOR . $file;
 
 			if (
         (filemtime($filePath) < time() - $this->getMaxFileAge())
+        &&
+        is_writable($filePath)
       )
       {
 				unlink($filePath);
